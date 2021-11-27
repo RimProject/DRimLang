@@ -1,0 +1,9 @@
+{
+	"authors": [
+		"swcs3"
+	],
+	"copyright": "Copyright © 2021, swcs3",
+	"description": "DRimLang programming language repo",
+	"license": "MIT",
+	"name": "drimlang"
+}

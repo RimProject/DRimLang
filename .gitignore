@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/drimlang
+drimlang.so
+drimlang.dylib
+drimlang.dll
+drimlang.a
+drimlang.lib
+drimlang-test-*
+*.exe
+*.o
+*.obj
+*.lst
