@@ -1,0 +1,25 @@
+def main sys_args[] {
+	a = 124 // int 
+
+	mut b = 1.23 // decimal
+
+	a = 'a' // error: variables on default immutable. pls, use `mut a` for mutate this variable
+
+	// and this is a comments
+
+	// all text, if it starts with `//`, be a comment
+
+	/* multiline comments
+	* realy
+	* multi
+	* line
+	*/
+
+	// put variable to output
+
+	print b
+
+	// put variables to output
+
+	print (a, b)
+}

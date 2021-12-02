@@ -11,24 +11,77 @@ enum TokenKind {
 	INT,	// 123
 	FLT, 	// 1.23
 	ARR, 	// ['H', 'i']
-	OBJ, 	// NAME: {first: "1", second: 2, third: {fouth: [1, 2, 3, 4]}}
+	OBJ, 	// NAME: {first: "1", second: 2, third: {fouth: [1, 2, 3, 4]}}, class exemplare
 	NON, 	// void -> functions returns nothing, null -> variable got nothing
 
-	// binary operators
+	// math binary operators
 	PLS, 	// +
 	MNS, 	// -
 	MLT,	// *
 	DVS, 	// /
 	RST, 	// %
 	UNT, 	// //
-	DGR, 	// ^
-	ADV, 	// =
-	NADV,	// !=
-	MADV,	// >=
-	LADV, 	// =<
+	DGR, 	// **
+
+	// bit binary operators
+
+	BLSH,	// <<
+	BRSH, 	// >>
+	BMLT, 	// &
+	BDJ,	// |
+	BEX, 	// ^	
+
+	// logical operators
+
+	AND,	// &&
+	NOT, 	// !
+	OR, 	// ||
+
+	// match operators
+
+	EQU, 	// ==
+	NEQU,	// !=
+	MEQU,	// >=
+	LEQU, 	// =<
 	MOR,	// >
 	LES, 	// <
 
-	// continued...
+	// separator
+	
+	COM, 	// ,
 
+	// assign operator 
+
+	ASG, 	// =
+
+	// brackets
+
+	LBKT, 	// (
+	RBKT,	// )
+	LBQT, 	// [
+	RBQT,	// ]
+	LBFT, 	// {
+	RBFT, 	// }
+
+	// quotes	
+
+	QTE, 	// '
+	DQTE, 	// "
+
+	// dollar char
+	DLR, 	// $
+
+}
+
+class Token {
+	TokenKind kind;
+	string value;
+	int pos;
+
+
+	this (TokenKind kind, string value, int pos) {
+		this.kind = kind;
+		this.value = value;
+		this.pos = pos;
+	}
 }

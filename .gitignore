@@ -13,3 +13,4 @@ drimlang-test-*
 *.o
 *.obj
 *.lst
+.token.txt
